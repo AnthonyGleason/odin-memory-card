@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 
 //import components
@@ -6,11 +7,14 @@ import Header from './components/Header.js';
 import Instructions from './components/Instructions';
 
 function App() {
+  const [score,setScore] = useState(0);
+  const [bestScore, setBestScore] = useState(0);
+
   return (
     <div className='app'>
-      <Header />
+      <Header score={score} bestScore={bestScore} />
       <Instructions />
-      <Content />
+      <Content score={score} bestScore={bestScore} setScore={setScore} setBestScore={setBestScore} />
     </div>
   );
 }

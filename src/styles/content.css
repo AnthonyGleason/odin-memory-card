@@ -1,0 +1,10 @@
+.card-item img{
+  height: 120px;
+  width: 120px
+}
+.card-item{
+  cursor: pointer;
+  background-color: beige;
+  height: fit-content;
+  width: fit-content;
+}
