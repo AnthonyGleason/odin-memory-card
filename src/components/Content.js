@@ -63,23 +63,42 @@ let checkGameOver = function(item){
 let playTurn = function(item,setScore,setBestScore,score,bestScore){
   if (checkGameOver(item)){
     gameOver(setBestScore, score, bestScore,setScore);
+  }else if (!checkGameOver(item)&&score===11){
+    gameOver(setBestScore, 12, bestScore,setScore);
   }else{
     item.pressed=true;
-    setScore(score+1)
+    setScore(score+1);
   }
-};
+}
+
+let shuffleCards = function(props){
+  //mirror cardArray
+  let shuffledArray = cardArray;
+  //randomize the shuffled array
+  for (let i=0; i<=20; i++){
+    let num1 = Math.floor(Math.random()*(11-0+1)+0);
+    let num2 = Math.floor(Math.random()*(11-0+1)+0);
+    //swap array indexes
+    let temp = cardArray[num1];
+    cardArray[num1]=shuffledArray[num2];
+    shuffledArray[num2]=temp;
+  };
+  //return the shuffled array
+  return shuffledArray.map((item)=>{
+    return(
+      <div onClick={()=>{playTurn(item,props.setScore,props.setBestScore,props.score,props.bestScore)}} key={cardArray.indexOf(item)} className='card-item'>
+        <img src={item.img} alt={item.name}></img>
+        <div className='card-item-text'>{item.name}</div>
+      </div>
+    )
+  })
+}
+
 
 export default function Content(props){
   return(
     <div className='content'>
-      {cardArray.map((item)=>{
-        return(
-          <div onClick={()=>{playTurn(item,props.setScore,props.setBestScore,props.score,props.bestScore)}} key={cardArray.indexOf(item)} className='card-item'>
-            <img src={item.img} alt={item.name}></img>
-            <div className='card-item-text'>{item.name}</div>
-          </div>
-        )
-      })}
+      {shuffleCards(props)}
     </div>
   )
 }

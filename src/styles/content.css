@@ -8,3 +8,6 @@
   height: fit-content;
   width: fit-content;
 }
+.content{
+  display: flex;
+}
