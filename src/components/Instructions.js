@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/instructions.css';
 
 export default function Instructions(){
   return(
