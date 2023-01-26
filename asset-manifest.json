@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/odin-memory-card/static/css/main.96dcf62e.css",
+    "main.js": "/odin-memory-card/static/js/main.79579c49.js",
+    "static/js/787.66bce2f0.chunk.js": "/odin-memory-card/static/js/787.66bce2f0.chunk.js",
+    "static/media/slackware.png": "/odin-memory-card/static/media/slackware.ff67437e7c8dcdbd5192.png",
+    "static/media/arch.png": "/odin-memory-card/static/media/arch.a77be035568c604d2b1b.png",
+    "static/media/freeBSD.png": "/odin-memory-card/static/media/freeBSD.3f69f05ad68ed099bc03.png",
+    "static/media/redhat.png": "/odin-memory-card/static/media/redhat.5239318426f44bff4320.png",
+    "static/media/gentoo.png": "/odin-memory-card/static/media/gentoo.540a158d3c76b7e137ef.png",
+    "static/media/fedora.png": "/odin-memory-card/static/media/fedora.3b4e32765c92dba3ed40.png",
+    "static/media/linux.svg": "/odin-memory-card/static/media/linux.cc9a8e9221fef2b05c6c88364e219728.svg",
+    "static/media/gnu.png": "/odin-memory-card/static/media/gnu.9dcad23078c1924d896f.png",
+    "static/media/ubuntu.png": "/odin-memory-card/static/media/ubuntu.1910d63831811883cd54.png",
+    "static/media/openBSD.png": "/odin-memory-card/static/media/openBSD.c119a2fdca3d7e62d53c.png",
+    "static/media/openSUSE.svg": "/odin-memory-card/static/media/openSUSE.41c7caa396fc8aa0a5db320e561161a8.svg",
+    "static/media/debian.svg": "/odin-memory-card/static/media/debian.8f335591cd57e46e81fb66ea8a82baf6.svg",
+    "index.html": "/odin-memory-card/index.html",
+    "main.96dcf62e.css.map": "/odin-memory-card/static/css/main.96dcf62e.css.map",
+    "main.79579c49.js.map": "/odin-memory-card/static/js/main.79579c49.js.map",
+    "787.66bce2f0.chunk.js.map": "/odin-memory-card/static/js/787.66bce2f0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96dcf62e.css",
+    "static/js/main.79579c49.js"
+  ]
+}
